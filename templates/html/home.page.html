@@ -1,0 +1,76 @@
+{{template "base" .}}
+
+{{ define "content"}}
+    <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/outside.png" class="d-block w-100" alt="Outside view">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beautiful Exterior</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/tray.png" class="d-block w-100" alt="Room service">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Luxury Service</h5>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/woman-laptop.png" class="d-block w-100" alt="Woman with laptop">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Work & Relax</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mb-5 pb-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center mt-4">Welcome to the Bookings Apps</h1>
+                <p>This is the home page of our website.
+                    Here you can find information about our services and how to book a room.
+                    If you have any questions, please don't hesitate to contact us.
+                    We look forward to hearing from you.</p>
+                
+                <p>Experience luxury and comfort at our premier hotel destination.
+                    Our elegant rooms and suites are designed with your relaxation in mind.
+                    From business travelers to vacation seekers, we cater to all your needs.
+                    Let us make your stay memorable.</p>
+                
+                <p>Discover our world-class amenities and exceptional service.
+                    Enjoy fine dining at our restaurant, unwind at our spa, or stay productive in our business center.
+                    Our dedicated staff is available 24/7 to ensure your comfort.
+                    Your perfect getaway starts here.</p>
+                
+                <p>Located in the heart of the city, we offer convenience and accessibility.
+                    Explore nearby attractions, shopping districts, and cultural landmarks.
+                    Whether for business or leisure, our location makes every destination within reach.
+                    Book your stay today and experience the difference.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="/search-availability" class="btn btn-primary btn-lg mb-5">Make a Reservation</a>
+            </div>            
+        </div>
+    </div>
+{{ end }}
